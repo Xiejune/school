@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- 清除預設 -->
+  <link rel="stylesheet" href="../css/normalize.css">
+  <!-- 使用 font awesome -> icon 圖示 -->
+  <link rel="stylesheet" href="../css/all.css">
+  <!-- 使用動畫 -->
+  <link rel="stylesheet" href="../css/animate.css">
+  <!-- css 的樣式 -->
+  <link rel="stylesheet" href="../css/style.css">
+  <!-- 1.設定 swiper css -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+  <!-- 1. AOS 的 css -->
+  <link rel="stylesheet" href="../css/aos.css">
+  <title>聯絡我們</title>
+</head>
+<body>
+  <!-- 1.導覽列 -->
+  <div id="navbar">
+    <div class="container-fluid">
+      <!-- 漢堡按鈕 -->
+      <button type="button" class="btn" id="btn-hamburger"><i class="fa-solid fa-bars animate__animated"></i></button>
+      <!-- logo -->
+      <a id="logo" href="../index.html"><img src="../images/logo.svg"></a>
+      <!-- 右側清單 -->
+      <div id="nav-right">
+        <ul id="menu" >
+          <li>
+            <p>本系簡介<i class="fa-solid fa-angle-down animate__animated"></i></p>
+            <ul>
+              <li><a href="../本系簡介/transportation.html">交通資訊</a></li>
+            </ul>
+          </li>
+          <li>
+            <p>最新公告<i class="fa-solid fa-angle-down animate__animated"></i></p>
+            <ul>
+              <li><a href="../最新公告/normal.html">一般事務</a></li>
+              <li><a href="../最新公告/lecture.html">講座</a></li>
+              <li><a href="../最新公告/scholarship.html">獎助學金</a></li>
+              <li><a href="../最新公告/AACSB.html">AACSB</a></li>
+            </ul>
+          </li>
+          <li>
+            <p>師資陣容<i class="fa-solid fa-angle-down animate__animated"></i></p>
+            <ul>
+              <li><a href="../師資陣容/teacher_main.html">專任老師</a></li>
+              <li><a href="../師資陣容/teacher_second.html">兼任老師</a></li>
+            </ul>
+          </li>
+          <li>
+            <p>招生資訊<i class="fa-solid fa-angle-down animate__animated"></i></p>
+            <ul>
+              <li><a href="../招生資訊/enter1.html">繁星入學</a></li>
+              <li><a href="../招生資訊/enter2.html">申請入學</a></li>
+              <li><a href="../招生資訊/enter3.html">考試分發</a></li>
+            </ul>
+          </li>
+          <div class="conect"><a href="./conect.html"><i class="fa-solid fa-envelope"></i>聯絡我們</a></div>
+        </ul>
+        <!-- 搜尋按鈕 -->
+        <button type="button" class="btn animate__animated animate__rotateIn1" id="btn-search"><i class="fa-solid fa-magnifying-glass"></i></button>
+        <div id="search">
+          <input type="text" placeholder="Search..."><i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="main_conect" class="main_common">
+    <div class="container">
+      <div class="bg">
+        <!-- 背景 -->
+        <img src="https://cdn.pixabay.com/photo/2017/08/07/04/47/stanford-university-2599981_960_720.jpg">
+        <div class="content">
+          <!-- 副標題 -->
+          <div class="text"><span></span></div>
+          <!-- 主標題 -->
+          <h1>聯絡我們</h1>
+          <!-- 麵包屑 -->
+          <div class="bread">現在位置：<a href="../index.html">首頁</a>&nbsp;&gt;&nbsp;聯絡我們</div>
+        </div>
+      </div>
+      <div id="conect_main">
+        <div class="container">
+          <p data-aos="fade-down" data-aos-duration="1500" data-aos-once="false" data-aos-offset="0">感謝您主動拜訪輔仁大學統計資訊學系網站，如果您有任何相關的問題，我們歡迎您隨時來信指教。</p>
+          <p data-aos="fade-down" data-aos-duration="1500" data-aos-once="false" data-aos-offset="0">並請您確實填寫下方資訊欄位，以方便我們儘快針對您的問題做回覆。( * 為必填)</p>
+          <form class="row" data-aos="fade-down" data-aos-duration="1500" data-aos-once="false" data-aos-offset="0">
+            <div class="col">
+              <p>姓名*</p>
+              <input type="text" placeholder="姓名*">
+            </div>
+            <div class="col">
+              <p>聯絡電話*</p>
+              <input type="tel" placeholder="聯絡電話*">
+            </div>
+            <div class="col">
+              <p>地址</p>
+              <input type="text" placeholder="地址">
+            </div>
+            <div class="col">
+              <p>郵件信箱*</p>
+              <input type="text" placeholder="郵件信箱*">
+            </div>
+            <div id="special" class="col">
+              <p>訊息*</p>
+              <textarea cols="30" rows="10" placeholder="訊息*"></textarea>
+            </div>
+            <div id="special_button" class="col">
+              <div class="button">
+                <input id="btn-conect" class="animate__animated" type="submit" value="送出">
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 結尾 -->
+  <div id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h3>輔仁大學統計資訊學系</h3>
+          <div class="row" id="data">
+            <div class="col">
+              <i class="fa-solid fa-location-dot"></i>
+              <p>新北市新莊區中正路510號</p>
+            </div>
+            <div class="col">
+              <i class="fa-solid fa-phone"></i>
+              <p>123456789</p>
+            </div>
+            <div class="col">
+              <i class="fa-solid fa-envelope"></i>
+              <p>abc@defg.com</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="row" id="social">
+            <div class="col"><a href="#"><i class="fa-brands fa-facebook"></i></a></div>
+            <div class="col"><a href="#"><i class="fa-brands fa-linkedin"></i></a></div>
+            <div class="col"><a href="#"><i class="fa-brands fa-youtube"></i></a></div>
+          </div>
+          <div class="col" id="copy">
+            <p>
+              謝宜君 &copy; 2022 切版練習<br>
+              此網站為切版練習，所有圖片的著作權為原網站所有
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <!-- js 指令 -->
+  <script src="../js/commond.js"></script>
+  <!-- 2.設定 swiper js -->
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <!-- 2. AOS 的主程式 js -->
+  <script src="../js/aos.js"></script>
+  <script>
+    // 3. 啟動 AOS
+    AOS.init()
+  </script>
+
+  <script>
+    // 紀錄前後是否一致
+    let record = []
+    // 計算按了幾次
+    let time = 0
+    const input = document.querySelectorAll('#conect_main .row .col:not(#special_button)')
+    for (const i in input) {
+      input[i].onclick = (event) => {
+        // 停止事件冒泡
+        event.stopPropagation()
+        record.push(i)
+        time++
+        // 前後是否一致
+        if (record[time-1] !== record[time-2]) {
+          for (const l of input) {
+            l.classList.remove('show')
+            // 將佔位符恢復
+            l.lastElementChild.placeholder = l.firstElementChild.innerText
+            if (l.lastElementChild.value !== '') {
+              l.classList.add('showp')
+            } else {
+              l.classList.remove('showp')
+            }
+          }
+        }
+        // 如果點擊時, record 已有 2 個數字, 則減掉第一個和 time 減掉 1 次
+        if (record.length === 2) {
+          // 減掉第一個
+          record.shift()
+          time--
+        }
+
+        // 如果點擊時, 這個元素沒有 .show, 則可以加上 .show
+        if (input[i].className.includes('')) {
+          input[i].classList.add('show')
+          input[i].lastElementChild.placeholder = ""
+        }
+      }
+    }
+
+    // 點擊螢幕恢復, 移除 .show
+    document.onclick = () => {
+      for (const l of input) {
+        l.classList.remove('show')
+        // 將佔位符恢復
+        l.lastElementChild.placeholder = l.firstElementChild.innerText
+        if (l.lastElementChild.value !== '') {
+          l.classList.add('showp')
+        } else {
+          l.classList.remove('showp')
+        }
+      }
+    }
+  </script>
+</body>
+</html>
