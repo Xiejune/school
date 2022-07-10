@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- 清除預設 -->
+  <link rel="stylesheet" href="../css/normalize.css">
+  <!-- 使用 font awesome -> icon 圖示 -->
+  <link rel="stylesheet" href="../css/all.css">
+  <!-- 使用動畫 -->
+  <link rel="stylesheet" href="../css/animate.css">
+  <!-- css 的樣式 -->
+  <link rel="stylesheet" href="../css/style.css">
+  <!-- 1.設定 swiper css -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+  <!-- 1. AOS 的 css -->
+  <link rel="stylesheet" href="../css/aos.css">
+  <title>師資陣容 - 專任老師</title>
+</head>
+<body>
+  <!-- 1.導覽列 -->
+  <div id="navbar">
+    <div class="container-fluid">
+      <!-- 漢堡按鈕 -->
+      <button type="button" class="btn" id="btn-hamburger"><i class="fa-solid fa-bars animate__animated"></i></button>
+      <!-- logo -->
+      <a id="logo" href="../index.html"><img src="http://www.stat.fju.edu.tw/assets/img/layout/logo-b.svg"></a>
+      <!-- 右側清單 -->
+      <div id="nav-right">
+        <ul id="menu" >
+          <li>
+            <p>本系簡介<i class="fa-solid fa-angle-down animate__animated"></i></p>
+            <ul>
+              <li><a href="../本系簡介/transportation.html">交通資訊</a></li>
+            </ul>
+          </li>
+          <li>
+            <p>最新公告<i class="fa-solid fa-angle-down animate__animated"></i></p>
+            <ul>
+              <li><a href="../最新公告/normal.html">一般事務</a></li>
+              <li><a href="../最新公告/lecture.html">講座</a></li>
+              <li><a href="../最新公告/scholarship.html">獎助學金</a></li>
+              <li><a href="../最新公告/AACSB.html">AACSB</a></li>
+            </ul>
+          </li>
+          <li>
+            <p>師資陣容<i class="fa-solid fa-angle-down animate__animated"></i></p>
+            <ul>
+              <li><a href="./teacher_main.html">專任老師</a></li>
+              <li><a href="./teacher_second.html">兼任老師</a></li>
+            </ul>
+          </li>
+          <li>
+            <p>招生資訊<i class="fa-solid fa-angle-down animate__animated"></i></p>
+            <ul>
+              <li><a href="../招生資訊/enter1.html">繁星入學</a></li>
+              <li><a href="../招生資訊/enter2.html">申請入學</a></li>
+              <li><a href="../招生資訊/enter3.html">考試分發</a></li>
+            </ul>
+          </li>
+          <div class="conect"><a href="../聯絡我們/conect.html"><i class="fa-solid fa-envelope"></i>聯絡我們</a></div>
+        </ul>
+        <!-- 搜尋按鈕 -->
+        <button type="button" class="btn animate__animated animate__rotateIn1" id="btn-search"><i class="fa-solid fa-magnifying-glass"></i></button>
+        <div id="search">
+          <input type="text" placeholder="Search..."><i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="main_teacher_main" class="main_common main_teacher">
+    <div class="container">
+      <div class="bg">
+        <!-- 背景 -->
+        <img src="http://www.stat.fju.edu.tw/assets/img/banner/prof-banner.jpg">
+        <div class="content">
+          <!-- 副標題 -->
+          <div class="text"><span></span><p>師資陣容</p></div>
+          <!-- 主標題 -->
+          <h1>專任老師</h1>
+          <!-- 麵包屑 -->
+          <div class="bread">現在位置：<a href="../index.html">首頁</a>&nbsp;&gt;&nbsp;師資陣容&nbsp;&gt;&nbsp;專任老師</div>
+        </div>
+      </div>
+      <div class="main">
+        <div class="row">
+          <div class="col" data-aos="fade-down" data-aos-duration="1500" data-aos-once="false" data-aos-offset="0">
+            <ul>
+              <li><a href="./teacher_main.html">專任老師</a></li>
+              <li><a href="./teacher_second.html">兼任老師</a></li>
+            </ul>
+          </div>
+          <div class="col" data-aos="fade-down" data-aos-duration="1500" data-aos-once="false" data-aos-offset="0">
+            <!-- Swiper -->
+            <div class="swiper" id="teacher_main_swiper1">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div>
+                    <img src="http://www.stat.fju.edu.tw/uploads/images/teacher/DSC_6389.jpg" />
+                    <div class="teacher_content">
+                      <h2>盧宏益 教授</h2>
+                      <p>(系主任)</p>
+                      <p>學歷: 國立政治大學 統計博士</p>
+                      <p>專長: 序貫分析、教育測驗</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div>
+                    <img src="http://www.stat.fju.edu.tw/uploads/images/teacher/DSC_6358.jpg" />
+                    <div class="teacher_content">
+                      <h2>侯家鼎 教授</h2>
+                      <p>(學術特聘教授)</p>
+                      <p>學歷: 國立政治大學 統計博士</p>
+                      <p>專長: 遺傳統計、聯立統計推論</p>
+                      <p>其他: 110學年度休假研究</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div>
+                    <img src="http://www.stat.fju.edu.tw/uploads/images/teacher/DSC_6379.jpg" />
+                    <div class="teacher_content">
+                      <h2>莊瑞珠 教授</h2>
+                      <p>學歷: 美國紐約州立大學石溪分校 統計博士</p>
+                      <p>專長: 統計計算、多變量分析</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div>
+                    <img src="http://www.stat.fju.edu.tw/uploads/images/teacher/DSC_6405.jpg" />
+                    <div class="teacher_content">
+                      <h2>李智 副教授</h2>
+                      <p>學歷: 國立中山大學 資訊管理所博士</p>
+                      <p>專長: 商業智慧分析、作業管理、策略管理、資訊管理</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div>
+                    <img src="http://www.stat.fju.edu.tw/uploads/images/teacher/DSC_6387.jpg" />
+                    <div class="teacher_content">
+                      <h2>黃孝雲 副教授</h2>
+                      <p>(兼管理學院 副院長)</p>
+                      <p>學歷: 美國匹茲堡大學 統計博士</p>
+                      <p>專長: 影像辨識、機械學習與資料探勘、時間序列</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div>
+                    <img src="http://www.stat.fju.edu.tw/uploads/images/teacher/DSC_6392.jpg" />
+                    <div class="teacher_content">
+                      <h2>李鍾斌 助理教授</h2>
+                      <p>(兼 大數據產業智慧學分學程召集人)</p>
+                      <p>學歷: 國立交通大學資訊管理研究所 資訊管理學博士</p>
+                      <p>專長: 資訊管理、電子商務、資訊安全</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div>
+                    <img src="http://www.stat.fju.edu.tw/uploads/images/teacher/DSC_6402.jpg" />
+                    <div class="teacher_content">
+                      <h2>邵皓強 助理教授</h2>
+                      <p>學歷: 國立清華大學 電機工程系博士</p>
+                      <p>專長: 影像處理、小波分析、自動化光學檢測、深度學習</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination swiper-pagination11"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 結尾 -->
+  <div id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h3>輔仁大學統計資訊學系</h3>
+          <div class="row" id="data">
+            <div class="col">
+              <i class="fa-solid fa-location-dot"></i>
+              <p>新北市新莊區中正路510號</p>
+            </div>
+            <div class="col">
+              <i class="fa-solid fa-phone"></i>
+              <p>123456789</p>
+            </div>
+            <div class="col">
+              <i class="fa-solid fa-envelope"></i>
+              <p>abc@defg.com</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="row" id="social">
+            <div class="col"><a href="#"><i class="fa-brands fa-facebook"></i></a></div>
+            <div class="col"><a href="#"><i class="fa-brands fa-linkedin"></i></a></div>
+            <div class="col"><a href="#"><i class="fa-brands fa-youtube"></i></a></div>
+          </div>
+          <div class="col" id="copy">
+            <p>
+              謝宜君 &copy; 2022 切版練習<br>
+              此網站為切版練習，所有圖片的著作權為原網站所有
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <!-- js 指令 -->
+  <script src="../js/commond.js"></script>
+  <!-- 2.設定 swiper js -->
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <!-- 2. AOS 的主程式 js -->
+  <script src="../js/aos.js"></script>
+  <script>
+    // 4.啟用 Swiper
+    const teacher_main_swiper1 = new Swiper('#teacher_main_swiper1', {
+      effect: "coverflow",
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: "auto",
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true,
+      },
+      pagination: {
+        el: ".swiper-pagination11",
+        type: "fraction",
+      },
+    });
+    // 3. 啟動 AOS
+    AOS.init()
+  </script>
+</body>
+</html>

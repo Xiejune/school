@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- 清除預設 -->
+  <link rel="stylesheet" href="./css/normalize.css">
+  <!-- 使用 font awesome -> icon 圖示 -->
+  <link rel="stylesheet" href="./css/all.css">
+  <!-- 使用動畫 -->
+  <link rel="stylesheet" href="./css/animate.css">
+  <!-- css 的樣式 -->
+  <link rel="stylesheet" href="./css/style.css">
+  <!-- 1.設定 swiper css -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+  <!-- 1. AOS 的 css -->
+  <link rel="stylesheet" href="./css/aos.css">
+  <title>輔仁大學統計資訊學系</title>
+</head>
+<body>
+  <!-- 1.導覽列 -->
+  <div id="navbar">
+    <div class="container-fluid">
+      <!-- 漢堡按鈕 -->
+      <button type="button" class="btn" id="btn-hamburger"><i class="fa-solid fa-bars animate__animated"></i></button>
+      <!-- logo -->
+      <a id="logo" href="./index.html"><img src="http://www.stat.fju.edu.tw/assets/img/layout/logo-b.svg"></a>
+      <!-- 右側清單 -->
+      <div id="nav-right">
+        <ul id="menu" >
+          <li>
+            <p>本系簡介<i class="fa-solid fa-angle-down animate__animated"></i></p>
+            <ul>
+              <li><a href="./本系簡介/transportation.html">交通資訊</a></li>
+            </ul>
+          </li>
+          <li>
+            <p>最新公告<i class="fa-solid fa-angle-down animate__animated"></i></p>
+            <ul>
+              <li><a href="./最新公告/normal.html">一般事務</a></li>
+              <li><a href="./最新公告/lecture.html">講座</a></li>
+              <li><a href="./最新公告/scholarship.html">獎助學金</a></li>
+              <li><a href="./最新公告/AACSB.html">AACSB</a></li>
+            </ul>
+          </li>
+          <li>
+            <p>師資陣容<i class="fa-solid fa-angle-down animate__animated"></i></p>
+            <ul>
+              <li><a href="./師資陣容/teacher_main.html">專任老師</a></li>
+              <li><a href="./師資陣容/teacher_second.html">兼任老師</a></li>
+            </ul>
+          </li>
+          <li>
+            <p>招生資訊<i class="fa-solid fa-angle-down animate__animated"></i></p>
+            <ul>
+              <li><a href="./招生資訊/enter1.html">繁星入學</a></li>
+              <li><a href="./招生資訊/enter2.html">申請入學</a></li>
+              <li><a href="./招生資訊/enter3.html">考試分發</a></li>
+            </ul>
+          </li>
+          <div class="conect"><a href="../聯絡我們/conect.html"><i class="fa-solid fa-envelope"></i>聯絡我們</a></div>
+        </ul>
+        <!-- 搜尋按鈕 -->
+        <button type="button" class="btn animate__animated animate__rotateIn1" id="btn-search"><i class="fa-solid fa-magnifying-glass"></i></button>
+        <div id="search">
+          <input type="text" placeholder="Search..."><i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2.主題: 輪播圖1 -->
+  <div id="swiper1">
+    <div class="container">
+      <!-- 3.設定 swiper 結構 -->
+      <div id="one" class="swiper">
+        <!-- 輪播圖片的主體 -->
+        <div class="swiper-wrapper">
+          <!-- Slides items -->
+          <div class="swiper-slide">
+            <!-- 背景 -->
+            <div class="parallax-bg">
+              <img src="http://www.stat.fju.edu.tw/uploads/images/2021-2022/IMG-9740.JPG">
+            </div>
+            <!-- 內文 -->
+            <div class="content">
+              <!-- 日期 -->
+              <div class="day">
+                <p>學士班 / 碩士班 / 碩士在職專班</p>
+              </div>
+              <!-- 標題 -->
+              <div class="title">
+                <h1 data-swiper-parallax-y="100%" data-swiper-parallax-duration="2000">
+                  目標培育<br>
+                  統計資訊科學人才
+                </h1>
+              </div>
+              <!-- 按鈕 -->
+              <div class="button">
+                <button data-swiper-parallax-y="-100%" data-swiper-parallax-duration="2000">
+                  <a href="#" class="animate__animated">了解更多</a>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <!-- 背景 -->
+            <div class="parallax-bg">
+              <img src="http://www.stat.fju.edu.tw/uploads/images/1639383723758.jpeg">
+            </div>
+            <div class="content">
+              <!-- 日期 -->
+              <div class="day">
+                <p>學士班 / 碩士班 / 碩士在職專班</p>
+              </div>
+              <!-- 標題 -->
+              <div class="title">
+                <h1 data-swiper-parallax-y="100%" data-swiper-parallax-duration="2000">
+                  歡迎報考 111 學年度<br>
+                  統計資訊學系應用統計<br>
+                  碩士招生考試
+                </h1>
+              </div>
+              <!-- 按鈕 -->
+              <div class="button">
+                <button data-swiper-parallax-y="-100%" data-swiper-parallax-duration="2000">
+                  <a href="#" class="animate__animated">了解更多</a>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <!-- 背景 -->
+            <div class="parallax-bg">
+              <img src="http://www.stat.fju.edu.tw/uploads/images/2021-2022/2021conference.JPG">
+            </div>
+            <div class="content">
+              <!-- 日期 -->
+              <div class="day">
+                <p>學士班 / 碩士班 / 碩士在職專班</p>
+              </div>
+              <!-- 標題 -->
+              <div class="title">
+                <h1 data-swiper-parallax-y="100%" data-swiper-parallax-duration="2000">
+                  精進統計資訊學術創新
+                </h1>
+              </div>
+              <!-- 按鈕 -->
+              <div class="button">
+                <button data-swiper-parallax-y="-100%" data-swiper-parallax-duration="2000">
+                  <a href="#" class="animate__animated">了解更多</a>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <!-- 背景 -->
+            <div class="parallax-bg">
+              <img src="http://www.stat.fju.edu.tw/uploads/images/2021-2022/21subject2.JPG">
+            </div>
+            <div class="content">
+              <!-- 日期 -->
+              <div class="day">
+                <p>學士班 / 碩士班 / 碩士在職專班</p>
+              </div>
+              <!-- 標題 -->
+              <div class="title">
+                <h1 data-swiper-parallax-y="100%" data-swiper-parallax-duration="2000">
+                  專題成果展<br>
+                  與時俱進
+                </h1>
+              </div>
+              <!-- 按鈕 -->
+              <div class="button">
+                <button data-swiper-parallax-y="-100%" data-swiper-parallax-duration="2000">
+                  <a href="#" class="animate__animated">了解更多</a>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 上一張/下一張 -->
+        <div class="swiper-next_prev">
+          <div class="swiper-button-next swiper-button-next1"></div>
+          <div class="swiper-button-prev swiper-button-prev1"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 3.關於 -->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h3 data-aos="fade-down" data-aos-duration="1500" data-aos-once="false" data-aos-offset="0">臺灣第一所通過AACSB的認證大學</h2>
+          <p data-aos="fade-down" data-aos-duration="1500" data-aos-once="false" data-aos-offset="0">本系教學理念為「配合實務及學術界各領域之最新脈動，培植專業統計資訊人才」。</p>
+          <p data-aos="fade-down" data-aos-duration="1500" data-aos-once="false" data-aos-offset="0">課程設計重視理論與應用的結合，強調「做中學」，以統計計量與資訊課程為主，管理課程為輔。</p>
+          <div class="button" data-aos="fade-down" data-aos-duration="1500" data-aos-once="false" data-aos-offset="0">
+            <button>
+              <a href="./最新公告/AACSB.html" class="animate__animated">關於我們</a>
+            </button>
+          </div>
+        </div>
+        <div class="col">
+          <div data-aos="fade-down" data-aos-duration="1500" data-aos-once="false" data-aos-offset="0">
+            <svg id="picture1" x="0px" y="0px" width="1330px" height="1065px" viewBox="0 0 1330 1065">
+              <path fill="none" d="M1330,1065H0V0h1330V1065z M1280,1015V50H50v965H1280z"/>
+              <path fill="#FFFFFF" d="M1280,1015H50V50h1230V1015z M173.182,329.229l-41.943,316.211h85.01l4.944-56.836h29.413l4.413,56.836h84.033l-47.021-316.211H173.182z M220.145,532.549c2.143-27.991,7.404-72.263,15.781-132.813c4.187,52.729,8.362,96.997,12.524,132.813H220.145z M386.268,329.229l-41.943,316.211h85.01l4.944-56.836h29.413l4.413,56.836h84.033l-47.021-316.211H386.268z M433.231,532.549c2.143-27.991,7.404-72.263,15.781-132.813c4.187,52.729,8.362,96.997,12.524,132.813H433.231z M758.094,436.885c0-29.517-2.475-51.263-7.422-65.24c-4.95-13.977-15.302-25.65-31.055-35.013c-15.756-9.362-35.742-14.044-59.961-14.044c-17.841,0-33.627,3.027-47.363,9.082c-13.739,6.055-24.481,14.355-32.227,24.902c-7.748,10.547-12.402,21.518-13.965,32.91c-1.563,11.396-2.344,28.485-2.344,51.27v92.383c0,30.99,2.539,54.199,7.617,69.629s15.43,27.509,31.055,36.23S637.909,652.08,662,652.08c23.175,0,42.676-5.151,58.496-15.451c15.82-10.303,26.041-22.299,30.664-35.992c4.62-13.69,6.934-36.902,6.934-69.632v-12.323h-82.227v39.746c0,17.361-0.946,28.391-2.832,33.09c-1.889,4.7-5.893,7.047-12.012,7.047c-6.381,0-10.482-2.344-12.305-7.031c-1.825-4.688-2.734-14.713-2.734-30.078V414.58c0-16.016,0.909-26.431,2.734-31.25c1.822-4.815,6.119-7.227,12.891-7.227c5.987,0,9.863,1.983,11.621,5.945c1.758,3.964,2.637,13.938,2.637,29.917v54.959h82.227V436.885z M961.805,412.432c0-25.128-2.441-42.935-7.324-53.418c-4.883-10.479-14.844-19.171-29.883-26.074c-15.039-6.9-33.236-10.352-54.59-10.352c-19.531,0-36.2,3.159-50,9.473c-13.803,6.317-23.798,15.073-29.98,26.27c-6.186,11.2-9.277,28.906-9.277,53.125c0,16.797,2.179,30.6,6.543,41.406c4.361,10.81,9.863,19.272,16.504,25.391c6.641,6.122,20.182,15.952,40.625,29.492c20.44,13.413,33.268,22.983,38.477,28.711c5.078,5.731,7.617,17.904,7.617,36.523c0,8.466-1.337,14.844-4.004,19.141c-2.67,4.297-6.738,6.445-12.207,6.445s-9.277-1.69-11.426-5.078c-2.148-3.385-3.223-11.002-3.223-22.852v-38.477h-76.367v20.703c0,23.7,2.408,41.992,7.227,54.883c4.815,12.891,15.006,23.505,30.566,31.836c15.558,8.331,34.342,12.5,56.348,12.5c20.05,0,37.628-3.613,52.734-10.84c15.104-7.227,25.293-16.178,30.566-26.855c5.273-10.675,7.91-27.276,7.91-49.805c0-30.987-4.755-53.448-14.258-67.383c-9.506-13.931-32.56-31.76-69.162-53.485c-12.766-7.544-20.511-13.989-23.236-19.333c-2.856-5.341-4.281-13.291-4.281-23.843c0-8.209,1.27-14.331,3.809-18.372c2.539-4.04,6.28-6.061,11.23-6.061c4.557,0,7.813,1.499,9.766,4.492c1.953,2.997,2.93,9.961,2.93,20.898v23.438h76.367V412.432z M994.422,645.439h95.117c33.072,0,54.947-1.889,65.625-5.667c10.675-3.778,18.457-10.813,23.34-21.106c4.883-10.29,7.324-26.119,7.324-47.488v-29.313c0-20.583-3.388-35.86-10.156-45.828c-6.771-9.967-19.662-17.099-38.672-21.399c17.057-3.903,28.482-9.497,34.277-16.785c5.792-7.288,8.691-20.169,8.691-38.647c0-27.326-4.102-47.134-12.305-59.433c-8.203-12.295-18.979-20.459-32.324-24.493c-13.349-4.035-32.978-6.052-58.887-6.052h-82.031V645.439z M1093.738,385.088c2.93,1.044,5.304,3.549,7.129,7.52c1.822,3.974,2.734,10.907,2.734,20.801c0,18.75-1.107,30.112-3.32,34.082c-2.216,3.974-7.357,5.957-15.43,5.957c-1.953,0-4.688,0.067-8.203,0.195V383.33C1085.111,383.461,1090.809,384.047,1093.738,385.088z M1099.305,507.744c2.862,2.866,4.297,11.069,4.297,24.609v29.492c0,12.763-1.596,20.771-4.785,24.023c-3.192,3.256-10.58,5.078-22.168,5.469v-88.477C1088.886,503.252,1096.439,504.882,1099.305,507.744z"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 4.最新公告: 輪播圖2 -->
+  <div id="swiper2">
+    <div class="container">
+      <div class="content">
+        <h1>最新公告</h1>
+        <!-- 3.設定 swiper 結構 -->
+        <div id="two" class="swiper">
+          <!-- 輪播圖片的主體 -->
+          <div class="swiper-wrapper">
+            <!-- Slides items -->
+            <div class="swiper-slide">
+              <div class="cont" data-aos="fade-right" data-aos-duration="1500" data-aos-once="false" data-aos-offset="0">
+                <!-- 日期 -->
+                <p>2022-07-05</p>
+                <!-- 內容 -->
+                <p>111 學年度弱勢(共同)助學金申請</p>
+                <!-- 列別說明 -->
+                <div class="type">
+                  <span><i class="fa-solid fa-hand-holding-heart"></i></span>
+                  <p>獎助學金</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="cont" data-aos="fade-right" data-aos-duration="1500" data-aos-once="false" data-aos-offset="0">
+                <!-- 日期 -->
+                <p>2022-06-30</p>
+                <!-- 內容 -->
+                <p>111 學年度輔仁大學統計資訊學系 【 SQL 程式語言講座 】</p>
+                <!-- 列別說明 -->
+                <div class="type">
+                  <span><i class="fa-solid fa-microphone"></i></span>
+                  <p>講座</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="cont" data-aos="fade-right" data-aos-duration="1500" data-aos-once="false" data-aos-offset="0">
+                <!-- 日期 -->
+                <p>2022-06-29</p>
+                <!-- 內容 -->
+                <p>111 學年度暑假作息時間</p>
+                <!-- 列別說明 -->
+                <div class="type">
+                  <span><i class="fa-solid fa-screwdriver-wrench"></i></span>
+                  <p>一般事務</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="cont" data-aos="fade-right" data-aos-duration="1500" data-aos-once="false" data-aos-offset="0">
+                <!-- 日期 -->
+                <p>2022-06-20</p>
+                <!-- 內容 -->
+                <p>110 學年度畢業典禮連結</p>
+                <!-- 列別說明 -->
+                <div class="type">
+                  <span><i class="fa-solid fa-screwdriver-wrench"></i></span>
+                  <p>一般事務</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="cont" data-aos="fade-right" data-aos-duration="1500" data-aos-once="false" data-aos-offset="0">
+                <!-- 日期 -->
+                <p>2022-06-19</p>
+                <!-- 內容 -->
+                <p>輔仁大學統計資訊學系讀書會</p>
+                <!-- 列別說明 -->
+                <div class="type">
+                  <span><i class="fa-solid fa-microphone"></i></span>
+                  <p>講座</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="cont" data-aos="fade-right" data-aos-duration="1500" data-aos-once="false" data-aos-offset="0">
+                <!-- 日期 -->
+                <p>2022-06-17</p>
+                <!-- 內容 -->
+                <p>111 學年度申請入學分發放榜</p>
+                <!-- 列別說明 -->
+                <div class="type">
+                  <span><i class="fa-solid fa-screwdriver-wrench"></i></span>
+                  <p>一般事務</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination swiper-pagination1"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 結尾 -->
+  <div id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h3>輔仁大學統計資訊學系</h3>
+          <div class="row" id="data">
+            <div class="col">
+              <i class="fa-solid fa-location-dot"></i>
+              <p>新北市新莊區中正路510號</p>
+            </div>
+            <div class="col">
+              <i class="fa-solid fa-phone"></i>
+              <p>123456789</p>
+            </div>
+            <div class="col">
+              <i class="fa-solid fa-envelope"></i>
+              <p>abc@defg.com</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="row" id="social">
+            <div class="col"><a href="#"><i class="fa-brands fa-facebook"></i></a></div>
+            <div class="col"><a href="#"><i class="fa-brands fa-linkedin"></i></a></div>
+            <div class="col"><a href="#"><i class="fa-brands fa-youtube"></i></a></div>
+          </div>
+          <div class="col" id="copy">
+            <p>
+              謝宜君 &copy; 2022 切版練習<br>
+              此網站為切版練習，所有圖片的著作權為原網站所有
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <!-- js 指令 -->
+  <script src="./js/commond.js"></script>
+  <!-- 2.設定 swiper js -->
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <!-- 2. AOS 的主程式 js -->
+  <script src="./js/aos.js"></script>
+  <script>
+    // 4.啟用 Swiper
+    const one = new Swiper('#one', {
+      loop: true, // 無限循環
+      parallax: true,
+      autoplay: {
+        delay: 4000 // 自動播放，設定幾毫秒播放下一張
+      },
+
+      simulateTouch: false, // 是否可以拖曳
+
+      // 啟用上一張、下一張功能
+      navigation: {
+        nextEl: ".swiper-button-next1",
+        prevEl: ".swiper-button-prev1",
+      },
+    });
+
+    const two = new Swiper('#two', {
+      spaceBetween: 30, // 圖片與圖片之間的距離
+      slidesPerView: 1, // 每次要顯示幾張圖片，如果有設定 breakpoint，這裡是指最小尺寸開始
+      slidesPerGroup: 1, // 每次要換幾張圖片，如果有設定 breakpoint，這裡是指最小尺寸開始
+      // 使用斷點控制輪播圖各種參數，例如哪個尺寸顯示幾張圖片
+      breakpoints: {
+        768: {
+          slidesPerView: 2,
+          slidesPerGroup: 2,
+        },
+        1200: {
+          slidesPerView: 3,
+          slidesPerGroup: 3,
+        },
+      },
+      // 啟動分頁指示器功能
+      pagination: {
+        el: ".swiper-pagination1",
+        clickable: true,
+      },
+    });
+
+    // 3. 啟動 AOS
+    AOS.init()
+  </script>
+</body>
+</html>

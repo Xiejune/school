@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- 清除預設 -->
+  <link rel="stylesheet" href="../css/normalize.css">
+  <!-- 使用 font awesome -> icon 圖示 -->
+  <link rel="stylesheet" href="../css/all.css">
+  <!-- 使用動畫 -->
+  <link rel="stylesheet" href="../css/animate.css">
+  <!-- css 的樣式 -->
+  <link rel="stylesheet" href="../css/style.css">
+  <!-- 1.設定 swiper css -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+  <!-- 1. AOS 的 css -->
+  <link rel="stylesheet" href="../css/aos.css">
+  <title>最新公告 - AACSB</title>
+</head>
+<body>
+  <!-- 1.導覽列 -->
+  <div id="navbar">
+    <div class="container-fluid">
+      <!-- 漢堡按鈕 -->
+      <button type="button" class="btn" id="btn-hamburger"><i class="fa-solid fa-bars animate__animated"></i></button>
+      <!-- logo -->
+      <a id="logo" href="../index.html"><img src="http://www.stat.fju.edu.tw/assets/img/layout/logo-b.svg"></a>
+      <!-- 右側清單 -->
+      <div id="nav-right">
+        <ul id="menu" >
+          <li>
+            <p>本系簡介<i class="fa-solid fa-angle-down animate__animated"></i></p>
+            <ul>
+              <li><a href="../本系簡介/transportation.html">交通資訊</a></li>
+            </ul>
+          </li>
+          <li>
+            <p>最新公告<i class="fa-solid fa-angle-down animate__animated"></i></p>
+            <ul>
+              <li><a href="./normal.html">一般事務</a></li>
+              <li><a href="./lecture.html">講座</a></li>
+              <li><a href="./scholarship.html">獎助學金</a></li>
+              <li><a href="./AACSB.html">AACSB</a></li>
+            </ul>
+          </li>
+          <li>
+            <p>師資陣容<i class="fa-solid fa-angle-down animate__animated"></i></p>
+            <ul>
+              <li><a href="../師資陣容/teacher_main.html">專任老師</a></li>
+              <li><a href="../師資陣容/teacher_second.html">兼任老師</a></li>
+            </ul>
+          </li>
+          <li>
+            <p>招生資訊<i class="fa-solid fa-angle-down animate__animated"></i></p>
+            <ul>
+              <li><a href="../招生資訊/enter1.html">繁星入學</a></li>
+              <li><a href="../招生資訊/enter2.html">申請入學</a></li>
+              <li><a href="../招生資訊/enter3.html">考試分發</a></li>
+            </ul>
+          </li>
+          <div class="conect"><a href="../聯絡我們/conect.html"><i class="fa-solid fa-envelope"></i>聯絡我們</a></div>
+        </ul>
+        <!-- 搜尋按鈕 -->
+        <button type="button" class="btn animate__animated animate__rotateIn1" id="btn-search"><i class="fa-solid fa-magnifying-glass"></i></button>
+        <div id="search">
+          <input type="text" placeholder="Search..."><i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="main_AACSB" class="main_common">
+    <div class="container">
+      <div class="bg">
+        <!-- 背景 -->
+        <img src="http://www.stat.fju.edu.tw/assets/img/banner/news-banner.jpg">
+        <div class="content">
+          <!-- 副標題 -->
+          <div class="text"><span></span><p>最新公告</p></div>
+          <!-- 主標題 -->
+          <h1>AACSB</h1>
+          <!-- 麵包屑 -->
+          <div class="bread">現在位置：<a href="../index.html">首頁</a>&nbsp;&gt;&nbsp;最新公告&nbsp;&gt;&nbsp;AACSB</div>
+        </div>
+      </div>
+      <div class="main">
+        <div class="row">
+          <div class="col" data-aos="fade-down" data-aos-duration="1500" data-aos-once="false" data-aos-offset="0">
+            <ul>
+              <li><a href="./normal.html">一般事務</a></li>
+              <li><a href="./lecture.html">講座</a></li>
+              <li><a href="./scholarship.html">獎助學金</a></li>
+              <li><a href="./AACSB.html">AACSB</a></li>
+            </ul>
+          </div>
+          <div class="col" data-aos="fade-down" data-aos-duration="1500" data-aos-once="false" data-aos-offset="0">
+            <!-- Swiper -->
+            <div class="swiper" id="AACSB_swiper1">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <ul>
+                    <li><p>2020-01-30</p> 輔仁大學管理學院領先通過 AACSB 第三次維持認證</li>
+                    <li><p>2020-01-01</p> 國際商管學院促進學會認證</li>
+                    <li><p>2020-01-01</p> BGS 為 AACSB 認可的唯一學術榮譽團體</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="swiper-button-next swiper-button-next11"></div>
+              <div class="swiper-button-prev swiper-button-prev11"></div>
+              <div class="swiper-pagination swiper-pagination11"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 結尾 -->
+  <div id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h3>輔仁大學統計資訊學系</h3>
+          <div class="row" id="data">
+            <div class="col">
+              <i class="fa-solid fa-location-dot"></i>
+              <p>新北市新莊區中正路510號</p>
+            </div>
+            <div class="col">
+              <i class="fa-solid fa-phone"></i>
+              <p>123456789</p>
+            </div>
+            <div class="col">
+              <i class="fa-solid fa-envelope"></i>
+              <p>abc@defg.com</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="row" id="social">
+            <div class="col"><a href="#"><i class="fa-brands fa-facebook"></i></a></div>
+            <div class="col"><a href="#"><i class="fa-brands fa-linkedin"></i></a></div>
+            <div class="col"><a href="#"><i class="fa-brands fa-youtube"></i></a></div>
+          </div>
+          <div class="col" id="copy">
+            <p>
+              謝宜君 &copy; 2022 切版練習<br>
+              此網站為切版練習，所有圖片的著作權為原網站所有
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <!-- js 指令 -->
+  <script src="../js/commond.js"></script>
+  <!-- 2.設定 swiper js -->
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <!-- 2. AOS 的主程式 js -->
+  <script src="../js/aos.js"></script>
+  <script>
+    // 4.啟用 Swiper
+    const AACSB_swiper1 = new Swiper('#AACSB_swiper1', {
+      effect: "flip",
+      grabCursor: true,
+      pagination: {
+        el: ".swiper-pagination11",
+        clickable: true,
+        renderBullet: function (index, className) {
+          return '<span class="' + className + '">' + (index + 1) + "</span>";
+        },
+      },
+      navigation: {
+        nextEl: ".swiper-button-next11",
+        prevEl: ".swiper-button-prev11",
+      },
+    });
+    // 3. 啟動 AOS
+    AOS.init()
+  </script>
+</body>
+</html>
